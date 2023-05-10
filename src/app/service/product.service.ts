@@ -64,7 +64,7 @@ this.cartData.emit(items)
   getCartList(userId:number){
     return this.http.get('http://localhost:3000/cart?userId='+userId,
     {observe:'response' }).subscribe((result)=>{
-this.cartData.emit(items)
+
 
     })  
 
